@@ -1,5 +1,7 @@
 #pragma once
 
+#define CURRENT_VERSION         "0.1"
+
 #define DS_PIN  D3
 
 #define HEATER_OUT_INDEX                0
@@ -10,3 +12,6 @@
 #define EXCHANGER_TO_COLLECTOR_INDEX    5
 #define COLLECTOR_IN_INDEX              6
 #define COLLECTOR_OUT_INDEX             7
+#define THERMOSTAT_INDEX                8
+
+#define MQTT_INTERVAL                   5000

@@ -27,6 +27,7 @@ void setupSensors() {
 
   // Установить разрешение 9 бит у всех датчиков на линии
   // Точность 0.5 градуса
+  // Не работает
   sensors.setResolutionAll(9);
 }
 
@@ -38,7 +39,8 @@ void processSensors() {
     for (int i = 0; i < DS_SENSOR_AMOUNT; i++) {
       temperatures[i] = sensors.getTemp(i);
     }
-
+    // и тут не работает ((
+    sensors.setResolutionAll(9);
     sensors.requestTempAll();
   }
 }
